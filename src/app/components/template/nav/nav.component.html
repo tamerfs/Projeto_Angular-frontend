@@ -1,0 +1,21 @@
+
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/" ><i class="material-icons">home</i>HOME</a>
+            <a  mat-list-item routerLink="/intro" ><i class="material-icons">sports_score</i>Intro</a>
+            <a  mat-list-item routerLink="/players"><i class="material-icons">sports_kabaddi</i>Players</a>
+            <a  mat-list-item routerLink="/loja"><i class="material-icons">balance</i>Lojas</a>
+            <a  mat-list-item routerLink="/forja"><i class="material-icons">whatshot</i>Forja</a>
+            <a  mat-list-item routerLink="/dados"><i class="material-icons">casino</i>Dados</a>
+            <a  mat-list-item routerLink="/jogo"><i class="material-icons">style</i>Ghandha</a>
+            <a  mat-list-item routerLink="/mapa"><i class="material-icons">sailing</i>Mapa</a>
+            <a  mat-list-item routerLink="/contos"><i class="material-icons">record_voice_over</i>Contos</a>
+            <a  mat-list-item routerLink="/biblioteca"><i class="material-icons">menu_book</i>Biblioteca</a>
+           <!-- <a  mat-list-item routerLink="/products"><i class="material-icons">pets</i>Bestiario</a>-->
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

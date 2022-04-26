@@ -1,0 +1,198 @@
+<div class="mat-elevation-z4">
+    <table mat-table class="table" [dataSource]="products">
+
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>Id</th>
+        <td mat-cell *matCellDef="let row">N° {{row.id}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Nome</th>
+        <td mat-cell *matCellDef="let row">{{row.name}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="classe">
+        <th mat-header-cell *matHeaderCellDef>Classe</th>
+        <td mat-cell *matCellDef="let row">{{row.classe}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="dinheiro">
+        <th mat-header-cell *matHeaderCellDef>Dinheiro</th>
+        <td mat-cell *matCellDef="let row">{{row.dinheiro | currency: 'KL '}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="age">
+        <th mat-header-cell *matHeaderCellDef>Age</th>
+        <td mat-cell *matCellDef="let row">{{row.age}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="player">
+        <th mat-header-cell *matHeaderCellDef>Player</th>
+        <td mat-cell *matCellDef="let row">{{row.player}}</td>
+      </ng-container> 
+
+      <ng-container matColumnDef="especie">
+        <th mat-header-cell *matHeaderCellDef>Especie</th>
+        <td mat-cell *matCellDef="let row">{{row.especie}}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="xp">
+        <th mat-header-cell *matHeaderCellDef>XP</th>
+        <td mat-cell *matCellDef="let row">{{row.exp}}</td>
+      </ng-container>
+      
+      <ng-container matColumnDef="level">
+        <th mat-header-cell *matHeaderCellDef>Level</th>
+        <td mat-cell *matCellDef="let row">{{row.level}}</td>
+      </ng-container>
+      
+      <ng-container matColumnDef="forca">
+        <th mat-header-cell *matHeaderCellDef>Força</th>
+        <td mat-cell *matCellDef="let row">{{row.forca}}</td>
+      </ng-container>
+      
+      <ng-container matColumnDef="resistencia">
+        <th mat-header-cell *matHeaderCellDef>Resistencia</th>
+        <td mat-cell *matCellDef="let row">{{row.resistencia}}</td>
+      </ng-container>
+      
+      <ng-container matColumnDef="agilidade">
+        <th mat-header-cell *matHeaderCellDef>Agilidade</th>
+        <td mat-cell *matCellDef="let row">{{row.agilidade}}</td>
+      </ng-container>
+      
+      <ng-container matColumnDef="persepcao">
+        <th mat-header-cell *matHeaderCellDef>Perceção</th>
+        <td mat-cell *matCellDef="let row">{{row.especie}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="presisao">
+        <th mat-header-cell *matHeaderCellDef>Precisão</th>
+        <td mat-cell *matCellDef="let row">{{row.presisao}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="inteligencia">
+        <th mat-header-cell *matHeaderCellDef>Inteligencia</th>
+        <td mat-cell *matCellDef="let row">{{row.inteligencia}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="sopro">
+        <th mat-header-cell *matHeaderCellDef>Sopro</th>
+        <td mat-cell *matCellDef="let row">{{row.sopro}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="coragem">
+        <th mat-header-cell *matHeaderCellDef>Coragem</th>
+        <td mat-cell *matCellDef="let row">{{row.coragem}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="carisma">
+        <th mat-header-cell *matHeaderCellDef>Carisma</th>
+        <td mat-cell *matCellDef="let row">{{row.carisma}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="titulo">
+        <th mat-header-cell *matHeaderCellDef>titulo</th>
+        <td mat-cell *matCellDef="let row">{{row.titulo}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="ventura">
+        <th mat-header-cell *matHeaderCellDef>ventura</th>
+        <td mat-cell *matCellDef="let row">{{row.ventura}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="vontade">
+        <th mat-header-cell *matHeaderCellDef>vontade</th>
+        <td mat-cell *matCellDef="let row">{{row.vontade}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="estresse">
+        <th mat-header-cell *matHeaderCellDef>estresse</th>
+        <td mat-cell *matCellDef="let row">{{row.estresse}}</td>
+      </ng-container>
+      <ng-container matColumnDef="medo">
+        <th mat-header-cell *matHeaderCellDef>medo</th>
+        <td mat-cell *matCellDef="let row">{{row.medo}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="tendencia">
+        <th mat-header-cell *matHeaderCellDef>tendencia</th>
+        <td mat-cell *matCellDef="let row">{{row.tendencia}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef>status</th>
+        <td mat-cell *matCellDef="let row">{{row.status}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="dano">
+        <th mat-header-cell *matHeaderCellDef>dano</th>
+        <td mat-cell *matCellDef="let row">{{row.dano}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="defesa">
+        <th mat-header-cell *matHeaderCellDef>defesa</th>
+        <td mat-cell *matCellDef="let row">{{row.defesa}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="valorArmadura">
+        <th mat-header-cell *matHeaderCellDef>valorArmadura</th>
+        <td mat-cell *matCellDef="let row">{{row.valorArmadura}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="valorArma">
+        <th mat-header-cell *matHeaderCellDef>valorArma</th>
+        <td mat-cell *matCellDef="let row">{{row.valorArma}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="hitpoint">
+        <th mat-header-cell *matHeaderCellDef>hitpoint</th>
+        <td mat-cell *matCellDef="let row">{{row.hitpoint}}</td>
+      </ng-container>
+      
+      <ng-container matColumnDef="langage">
+        <th mat-header-cell *matHeaderCellDef>Idioma</th>
+        <td mat-cell *matCellDef="let row">{{row.langage}}</td>
+      </ng-container>
+       
+      <ng-container matColumnDef="talento">
+        <th mat-header-cell *matHeaderCellDef>talento</th>
+        <td mat-cell *matCellDef="let row">{{row.talento}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="aptidoes">
+        <th mat-header-cell *matHeaderCellDef>aptidoes</th>
+        <td mat-cell *matCellDef="let row">{{row.aptidoes}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef>Ações</th>
+        <td mat-cell *matCellDef="let row"> <!-- posso trocar esse row por product 
+        que tem a mesma funcionalidade pois sao relacionados-->
+          <a routerLink ="/products/update/{{row.id}}">
+            <i class="material-icons edit">
+              edit
+            </i>
+          </a>
+          <a routerLink ="/products/delete/{{row.id}}">
+            <i class="material-icons delete">
+              delete
+            </i>
+          </a>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  

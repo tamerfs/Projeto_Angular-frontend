@@ -1,0 +1,106 @@
+<mat-card>
+    <mat-card-title class="title">Editar Personagem</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Especie" [(ngModel)]="product.especie" name="especie">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Classe" [(ngModel)]="product.classe" name="classe">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Dinheiro" [(ngModel)]="product.dinheiro" name="dinheiro">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="age" [(ngModel)]="product.age" name="age">
+        </mat-form-field> 
+        <mat-form-field>
+        <input matInput placeholder="player" [(ngModel)]="product.player" name="player">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="xp" [(ngModel)]="product.xp" name="xp">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="level" [(ngModel)]="product.level" name="level">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="forca" [(ngModel)]="product.forca" name="forca">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="agilidade" [(ngModel)]="product.agilidade" name="agilidade">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="agilidade" [(ngModel)]="product.agilidade" name="agilidade">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="persepcao" [(ngModel)]="product.persepcao" name="persepcao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="presisao" [(ngModel)]="product.presisao" name="presisao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="inteligencia" [(ngModel)]="product.inteligencia" name="inteligencia">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="sopro" [(ngModel)]="product.sopro" name="sopro">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="coragem" [(ngModel)]="product.coragem" name="coragem">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="carisma" [(ngModel)]="product.carisma" name="carisma">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="titulo" [(ngModel)]="product.titulo" name="titulo">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="talento" [(ngModel)]="product.carisma" name="talento">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="carisma" [(ngModel)]="product.carisma" name="carisma">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="aptidoes" [(ngModel)]="product.aptidoes" name="aptidoes">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="ventura" [(ngModel)]="product.carisma" name="ventura">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="vontade" [(ngModel)]="product.vontade" name="vontade">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="estresse" [(ngModel)]="product.estresse" name="estresse">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="medo" [(ngModel)]="product.medo" name="medo">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="tendencia" [(ngModel)]="product.tendencia" name="tendencia">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="status" [(ngModel)]="product.status" name="status">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="dano" [(ngModel)]="product.dano" name="dano">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="defesa" [(ngModel)]="product.defesa" name="defesa">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="valorArmadura" [(ngModel)]="product.valorArmadura" name="valorArmadura">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="valorArma" [(ngModel)]="product.valorArma" name="valorArma">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="hitpoint" [(ngModel)]="product.hitpoint" name="hitpoint">
+        </mat-form-field>
+
+    </form>
+</mat-card>
+
+<button mat-raised-button (click) = updateProduct() color="accent">Atualizar</button>
+
+<button mat-raised-button (click) = cancel()>Cancelar</button>

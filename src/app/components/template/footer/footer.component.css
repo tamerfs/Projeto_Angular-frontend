@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+
+
+.footer{
+    font-family: 'My Soul', cursive;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+}
+.footer span {
+    font-size: 1rem;
+    font-weight: 300;
+    
+}

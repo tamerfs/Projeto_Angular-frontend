@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+
+form {
+    display: contents;
+    margin-top: 20px;
+}
+
+button {
+   
+    margin: 20px 15px 10px 10px;
+}
+.title {
+    font-size: 2rem;
+    font-family: 'My Soul', cursive;
+}

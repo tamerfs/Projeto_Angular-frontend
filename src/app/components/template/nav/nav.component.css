@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=My+Soul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
+
+.sidenav{
+    font-family: 'Patrick Hand SC', cursive;
+    background-color: #255744;
+    width: 200px;
+}
+.sidenav a{
+    font-family:  'Garamond', serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #faebd7;
+    font-size: 1.5rem;
+}
+.sidenav i {
+    
+    padding-right: 10px;
+}
+.content {
+    font-family: 'Fasthand', cursive;
+    padding: 16px;
+    background-color: #faebd7;
+    color: rgb(0, 0, 0);
+}
