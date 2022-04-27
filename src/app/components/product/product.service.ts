@@ -12,7 +12,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 
 export class ProductService {
 
-  baseUrl = "http://localhost:3001/personagens"
+  baseUrl = "http://localhost:3001/personagem"
   // ligação front com backend
 
   constructor(private snackBar: MatSnackBar ,private http: HttpClient) { }
