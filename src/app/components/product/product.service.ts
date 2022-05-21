@@ -12,7 +12,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 
 export class ProductService {
 
-  baseUrl = "http://localhost:3001/personagem"
+  baseUrl = "https://quiet-refuge-48358.herokuapp.com/heroes"
+  //baseUrl = "http://localhost:3001/personagem"
   // ligação front com backend
 
   constructor(private snackBar: MatSnackBar ,private http: HttpClient) { }
